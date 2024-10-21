@@ -12,7 +12,8 @@ public class NumeroChecker {
         System.out.println("Insira um valor inteiro aleatório:");
         a = scanner.nextInt();
 
-        String comparador = a % 2 == 0 ? "O número " + a + " é par." : "O número " + a + " é impar.";
+        String comparador = (a%2 == 0) ? "O número " + a + " é par." :
+                            (a%2 != 0) ? "O número " + a + " é impar." : "";
 
         // A melhor maneira de fazer o comparador acima seria:
         // String comparador = (a % 2 == 0) ? "O número " + a + " é par." : "O número " + a + " é impar.";
